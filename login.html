@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign in · THE HAWK Portal</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+<!-- line icons (Tabler Icons, MIT) -->
+<svg class="sprite" aria-hidden="true" focusable="false"><symbol id="i-stats" viewBox="0 0 24 24"><path d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"/> <path d="M15 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"/> <path d="M9 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"/> <path d="M4 20h14"/></symbol><symbol id="i-eval" viewBox="0 0 24 24"><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"/> <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"/> <path d="M9 14l2 2l4 -4"/></symbol><symbol id="i-att" viewBox="0 0 24 24"><path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6"/> <path d="M16 3v4"/> <path d="M8 3v4"/> <path d="M4 11h16"/> <path d="M15 19l2 2l4 -4"/></symbol><symbol id="i-guardian" viewBox="0 0 24 24"><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/> <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1"/> <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/> <path d="M17 10h2a2 2 0 0 1 2 2v1"/> <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/> <path d="M3 13v-1a2 2 0 0 1 2 -2h2"/></symbol><symbol id="i-coach" viewBox="0 0 24 24"><path d="M5 13a7 7 0 1 0 14 0a7 7 0 0 0 -14 0z"/> <path d="M14.5 10.5l-2.5 2.5"/> <path d="M17 8l1 -1"/> <path d="M14 3h-4"/></symbol><symbol id="i-admin" viewBox="0 0 24 24"><path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3"/> <path d="M12 11m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/> <path d="M12 12l0 2.5"/></symbol></svg>
+<div class="lg">
+  <!-- left: brand panel -->
+  <section class="lg-art" aria-label="THE HAWK Portal">
+    <div class="lg-dots" aria-hidden="true"></div>
+    <a class="lg-logo" href="index.html"><img src="assets/img/logo.webp" alt="" width="50" height="54"><span><b>THE HAWK</b><small>ELITE FOOTBALL CLUB</small></span></a>
+    <div class="lg-copy">
+      <p class="lg-kick">\ The Hawk Portal \</p>
+      <h2>Every session.<br>Every stat.<br>One place.</h2>
+      <ul class="lg-feats">
+        <li><span class="li"><svg viewBox="0 0 24 24"><use href="#i-stats"/></svg></span><span><b>Player stats</b>Minutes, goals and match-by-match form.</span></li>
+        <li><span class="li"><svg viewBox="0 0 24 24"><use href="#i-eval"/></svg></span><span><b>Evaluations</b>Monthly coach reports on every skill.</span></li>
+        <li><span class="li"><svg viewBox="0 0 24 24"><use href="#i-att"/></svg></span><span><b>Attendance</b>Training records for the whole season.</span></li>
+      </ul>
+    </div>
+    <img class="lg-player" src="assets/img/hero-player.webp" alt="" aria-hidden="true">
+    <a class="lg-back" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"/></svg>Back to website</a>
+  </section>
+
+  <!-- right: sign-in -->
+  <section class="lg-side">
+    <div class="lg-card">
+      <a class="lg-logo lg-logo-m" href="index.html"><img src="assets/img/logo.webp" alt="" width="44" height="48"><span><b>THE HAWK</b><small>ELITE FOOTBALL CLUB</small></span></a>
+      <h1>Sign in</h1>
+      <p class="lg-sub">Choose your account type to continue.</p>
+
+      <div class="roles" role="radiogroup" aria-label="Account type" id="roles">
+        <button type="button" class="role" role="radio" data-role="guardian"><span class="role-i"><svg viewBox="0 0 24 24"><use href="#i-guardian"/></svg></span><b>Guardian</b><small>Parents</small></button>
+        <button type="button" class="role" role="radio" data-role="coach"><span class="role-i"><svg viewBox="0 0 24 24"><use href="#i-coach"/></svg></span><b>Coach</b><small>Coaching staff</small></button>
+        <button type="button" class="role" role="radio" data-role="admin"><span class="role-i"><svg viewBox="0 0 24 24"><use href="#i-admin"/></svg></span><b>Admin</b><small>Club office</small></button>
+      </div>
+
+      <form id="lgForm" novalidate autocomplete="on">
+        <div id="fields"></div>
+        <div class="lg-line">
+          <label class="chk"><input type="checkbox" name="remember" checked><i></i>Keep me signed in</label>
+          <a class="lg-link" id="forgot" href="#">Forgot password?</a>
+        </div>
+
+        <!-- Hawk Check: our own captcha -->
+        <div class="hc" id="hc" data-state="idle">
+          <div class="hc-top">
+            <span class="hc-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 2.8v5.6c0 4.6-3.2 8.1-7.5 9.6-4.3-1.5-7.5-5-7.5-9.6V5.8z"/><path d="M9 12l2 2 4-4"/></svg>Hawk Check</span>
+            <span class="hc-hint" id="hcHint">Drag the ball into the goal</span>
+            <button type="button" class="hc-new" id="hcNew" aria-label="New challenge" title="New challenge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 00-14.3-4.6L4 8.5M4 4v4.5h4.5M4 13a8 8 0 0014.3 4.6L20 15.5M20 20v-4.5h-4.5"/></svg></button>
+          </div>
+          <div class="hc-track" id="hcTrack">
+            <div class="hc-goal" id="hcGoal" aria-hidden="true"><i></i></div>
+            <div class="hc-ball" id="hcBall" role="slider" tabindex="0" aria-label="Ball position. Use arrow keys to move, Enter to shoot." aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><svg class="ball" viewBox="2.4 2.4 19.2 19.2" aria-hidden="true"><circle cx="12" cy="12" r="9.2" fill="#fff" stroke="#0e134b" stroke-width="1.2"/><path d="M12 7l4.76 3.45l-1.76 5.55h-6l-1.76 -5.55z" fill="#0e134b" stroke="#0e134b" stroke-width="1.2" stroke-linejoin="round"/><path d="M12 7v-4m3 13l2.5 3m-.74 -8.55l3.74 -1.45m-11.44 7.05l-2.56 2.95m.74 -8.55l-3.74 -1.45" fill="none" stroke="#0e134b" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+          </div>
+          <p class="hc-msg" id="hcMsg" aria-live="polite"></p>
+          <input type="hidden" name="hawk_check" id="hcToken">
+        </div>
+        <!-- bots fill every field; people never see this one -->
+        <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <p class="lg-err" id="lgErr" role="alert"></p>
+        <button class="lg-btn" id="lgBtn" type="submit" disabled><span id="lgBtnTxt">Sign in</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+      </form>
+
+      <div class="demo" id="demo"></div>
+      <p class="lg-foot">Protected by Hawk Check. © 2026 THE HAWK Elite Football Club · C-PNG-18706</p>
+    </div>
+  </section>
+</div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/dash-data.js"></script>
+<script src="assets/js/login.js"></script>
+</body>
+</html>

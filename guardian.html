@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guardian · THE HAWK Portal</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/dash.css">
+</head>
+<body>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/dash-data.js"></script>
+<script src="assets/js/icons.js"></script>
+<script src="assets/js/dash-core.js"></script>
+<script src="assets/js/dash-shared.js"></script>
+<script>
+/* Guardian: one player only (the child linked to this account) */
+(function () {
+  "use strict";
+  const D = window.Dash, S = window.DashShared, X = window.HAWKX;
+  let me = null, child = null;
+  const head = (t, s) => D.head(t, s);
+  D.start({
+    role: "guardian", label: "GUARDIAN",
+    searchHint: "Search sessions, matches or reports",
+    user: ses => {
+      me = ses; child = X.players.find(p => p.id === ses.player) || X.demoPlayer;
+      return { name: child.guardian.name, sub: "Guardian of " + child.first, avatar: D.avatar(child, 38) };
+    },
+    nav: [
+      { id: "stats", label: "Player Stats", icon: "stats" },
+      { id: "evaluation", label: "Performance Evaluation", icon: "clipboard-check" },
+      { id: "attendance", label: "Attendance Report", icon: "calcheck" }
+    ],
+    views: {
+      stats: v => S.playerStats(v, child, { head: head("Player Stats", "Season 2026 · " + D.esc(child.name) + " · " + D.esc(child.pos) + " (" + child.cat + ")") }),
+      evaluation: v => S.evaluationReport(v, child, { head: head("Performance Evaluation", "Monthly reports from " + D.esc(child.first) + "'s coaches") }),
+      attendance: v => S.attendanceReport(v, child, { head: head("Attendance Report", "Training attendance for " + D.esc(child.name)) })
+    }
+  });
+})();
+</script>
+</body>
+</html>
